@@ -78,6 +78,13 @@ body{
 }
 p{
     color: rgb(41, 168, 168);
+    display: none;
     text-shadow: none;
+}
+hr{
+    width: 800px;
+}
+h6{
+    justify-self: center;
 }
 
