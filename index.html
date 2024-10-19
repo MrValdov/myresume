@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css" />
         <title>Luis Valdovinos Resume</title>
     </head>
-    <body>
+    <body onload="experience()">
         <section class="container">
         <div class="top">
             <div class="photo-frame">
@@ -17,15 +17,16 @@
 
         <div class="left_column">
             <div class="contact">
-                <h4 class="no_padding" id="skill_1" onmouseover="showSkillde_1()" onmouseout="hideSkillde_1()">
+                <h4 class="no_padding" id="skill_1">
                     CONTACT</h4>
                 <ul class="no_padding">
                     <li>Baldwin Park, CA 91706</li>
-                    <li><a href="mailto:ualvin@gmail.com">ualvin@gmail.com</a></li>
+                    <li><a href="mailto:ualvin@gmail.com" target="_blank" rel="noopener noreferrer">ualvin@gmail.com</a></li>
+                    <li>Mobile: 626.347.8242</li>
                 </ul>
             </div>
             <div class="education">
-                <h4 class="no_padding" id="skill_1" onmouseover="showSkillde_1()" onmouseout="hideSkillde_1()">
+                <h4 class="no_padding" id="skill_1">
                     EDUCATION</h4>
                 <ul class="no_padding" style="list-style-type: none">
                     <li>A.E.</li>
@@ -40,29 +41,54 @@
                 </ul>
             </div>
             <div class="certifications">
-                <h4 class="no_padding" id="skill_1" onmouseover="showSkillde_1()" onmouseout="hideSkillde_1()">
+                <h4 class="no_padding" id="skill_1">
                     CERTIFICATIONS</h4>
                 <ul class="no_padding">
                     <li>Elegible to be hired in the United States.</li>
                 </ul>
             </div>          
             <div class="skills">
-                <h4 class="no_padding" id="skill_1" onmouseover="showSkillde_1()" onmouseout="hideSkillde_1()">
+                <h4 class="no_padding" id="skill_1">
                     SKILLS</h4>
-                <ul class="no_padding" style="list-style-type: none">
-                    <li>A.E.</li>
-                    <li>B.C.S.</li>
+                    <ul id="see_list" class="no_padding, show_list" style="list-style-type: none">
+                        <li>Powershell</li>
+                        <li>Microsoft Azure</li>
+                        <li>Microsoft Entra ID</li>
+                        <li>Microsoft Intune</li>
+                        <li onmousedown="show_list()"><a>...</a></li>
+                    </ul>
+                <ul id="hid_list" class="no_padding, hidden_list" style="list-style-type: none">
+                    <li>Powershell</li>
+                    <li>Microsoft Azure</li>
+                    <li>Microsoft Entra ID</li>
+                    <li>Microsoft Intune</li>
+                    <li>Windows Deployment Services (WDS)</li>
+                    <li>Office 365 Administration</li>
+                    <li>Active Directory</li>
+                    <li>Remote User Support</li>
+                    <li>Version control with GitHub</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>JavaScript</li>
+                    <li>JavaScript Libraries</li>
+                    <li>HTML</li>
+                    <li>CSS Javascript</li>
+                    <li>PHP</li>
+                    <li>phpMyAdmin</li>
+                    <li>Network Administration</li>
+                    <li>Software Development</li>
+                    <li>Microsoft SQL Server</li>
+                    <li>MySQL</li>
                 </ul>
             </div>
-        </div>
-        
+        </div>        
         <div class="main_content">
             <div class="work_exp">
                 <h2>PROFESSIONAL SUMMARY</h2>
-                <p>Skilled developer with 15 years of experience in the Information Technologies Industry,
+                <p>Skilled developer with <span id="total_years"></span> years of experience in the Information Technologies Industry,
                     outstanding as a detail-oriented and result-driven professional. 
                     Very capable of creating tools and solutions for the evolving technological market.
-                    5 years of demonstrated success in leading cross-functional teams, proven record
+                    <span id="semi_years"></span> years of demonstrated success in leading cross-functional teams, proven record
                     of success in project managing accross multiple facilities.
                 </p><hr>
                 <h2>WORK HISTORY</h2>
@@ -70,7 +96,7 @@
                 <h4 id="we_1" onmouseover="showWede_1()" onmouseout="hideWede_1()">
                     IT Help Desk Technician II, <i>Stanbridge University</i></h4>
                     <ul id="wede_1" class="hidden_text">
-                        <li>Manage User Accounts.</li>
+                        <li>Manage User Accounts throughout different platforms.</li>
                         <li>Set up new devices based on Staff's department needs.</li>
                     </ul>
                 <hr>
@@ -94,28 +120,51 @@
                     </ul>
                     <li style="list-style-type: none;">Technical support for end user and equipment repairs.</li>
                     <li style="list-style-type: none;">Network setup and support for Enterprise clients.</li>
+                    <li style="list-style-type: none;">Security door systems setup and support for Enterprise clients.</li>
                 </ul><hr>
                 <h5><i>February 2017 - February 2019</i></h5>
                 <h4 id="we_3"onmouseover="showWede_3()" onmouseout="hideWede_3()">
                     Data Analyst, <i>Readypac Foods</i></h4>
-                <p id="wede_3" class="hidden_text">Perform multiple analysis accross databases to feed a series of reports, 
-                    in search for weak links in the production chain. Use the output to design strategies that would prevent 
-                    excesive downtime in future
-                </p><hr>
-                <h5><i>February 2017 - February 2019</i></h5>
+                    <ul id="wede_3" class="hidden_text">
+                        <li style="list-style-type: none;">Performed multiple analysis accross databases to feed a series of reports, 
+                        in search for weak links in the production chain. Used the output to design strategies that would prevent 
+                        excesive downtime in future, and to then set a systematic procedure that applied individually to each 
+                        individual piece of equipment to extend its functionality to only stop at scheduled Preventive Maintence
+                        instead of breakdowns.</li>
+                    </ul>
+                <hr>
+                <h5><i>August 2009 - February 2017</i></h5>
                 <h4 id="we_4" onmouseover="showWede_4()" onmouseout="hideWede_4()">
-                    Least recent work experience</h4>
-                <p id="wede_4" class="hidden_text">Most recent work experience.Most recent work experience.Most recent work experience.Most recent work experience.
-                    Most recent work experience.Most recent work experience.Most recent work experience.Most recent work experience.
-                </p><hr class="dense">
+                    Computer technician. <i>Self-employed</i></h4>
+                <ul id="wede_4" class="hidden_text">
+                    <li>Technical support for end user and computer repairs.</li>
+                    <li>Refurbished computers sale.</li>
+                    <li>Custom made computer sales.</li>
+                    <li>Computers retail.</li>
+                </ul>
+                </p>
             </div>
         </div>
         <div class="footer">
-            Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer 
-            Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer 
-            Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer 
-            <hr class="transparent_divider">
+            <hr>
+            <ul style="list-style-type: none; padding: 16px; ">
+                <li style="float: left; padding: 16px;">&nbsp;&nbsp;</li>
+                <li style="float: left; padding: 16px;">&nbsp;&nbsp;</li>
+                <li style="float: left; padding: 16px;">&nbsp;&nbsp;</li>
+                <li style="float: left; padding: 16px;">&nbsp;&nbsp;</li>
+                <li style="float: left; padding: 16px;">&nbsp;&nbsp;</li>
+                <li style="float: left; padding: 16px;">&nbsp;&nbsp;</li>
+                <li style="float: left; padding: 16px;">&nbsp;&nbsp;</li>
+                <li style="float: left; padding: 16px;">&nbsp;&nbsp;</li>
+                <li style="float: left; padding: 16px;">&nbsp;&nbsp;</li>
+                <li style="float: left; padding: 16px;"><a href="#portfolio">Portfolio</a></li>
+                <li style="float: left; padding: 16px;"><a href="#author">Author Page</a></li>
+                <li style="float: left; padding: 16px;"><a href="#contact">Contact</a></li>
+                <li style="float: left; padding: 16px;"><a href="#about">About</a></li>
+            </ul>
+            <div><hr class="transparent_divider">
             <h6 align="center" class="animatedText" id="animatedText">2023 - 2025 Luis Valdovinos all Rights Reserved</h6>
+            </div>
         </div>
         </section>
         <script src="script.js"></script>

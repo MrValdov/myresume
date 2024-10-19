@@ -21,8 +21,7 @@
     grid-area: footer;
     justify-self: center;
     place-self: center;
- }
-  
+ }  
 .container {
     display: grid;
     grid-template-columns: 200px 250px 250px 250px;
@@ -65,6 +64,9 @@ body{
     align-self: first baseline;
     margin-left: 8%;
     margin-top: 8%;
+}
+.hidden_list{
+    display: none;
 }
 .main_content{
     align-self: auto;
