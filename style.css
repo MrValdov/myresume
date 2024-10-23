@@ -84,6 +84,7 @@ body{
 p{
     color: rgb(41, 168, 168);
     text-shadow: none;
+    font-size: clamp(0.9rem, 2vw, 1rem)
 }
 .hidden_text{
     display: none;
@@ -144,7 +145,7 @@ a:active{
     text-decoration: underline;
   }
 li{
-    font-size: medium;
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 li:not(:last-child) {
     margin-bottom: 5px;
