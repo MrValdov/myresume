@@ -11,8 +11,7 @@
     grid-area: sidebar;
     justify-self: start;
     place-self: center;
-    padding-right: 10%;
-    min-width: 0;
+    min-width: 20%;
  }
 .main_content{
     grid-area: main;
