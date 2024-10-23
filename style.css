@@ -11,6 +11,7 @@
     grid-area: sidebar;
     justify-self: start;
     place-self: center;
+    gap: 10px;
     min-width: 20%;
  }
 .main_content{
