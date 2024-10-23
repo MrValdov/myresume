@@ -55,6 +55,7 @@ body{
     box-shadow: 8px 8px 5px #000000;
     white-space:nowrap;
     text-shadow: 8px 8px 5px #000000;
+    font-size: clamp(1.3rem, 3vw, 3rem);
 }
 .thumb-pic{
     margin-left: 8%;
