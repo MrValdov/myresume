@@ -27,7 +27,7 @@
  }  
 .container {
     display: grid;
-    grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
+    grid-template-columns: min(1fr, 10%) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
       "header header header header"
@@ -44,7 +44,7 @@ body{
     -webkit-user-drag: none;
     background-color: rgb(63, 63, 63);
     color: snow;
-    width: 80%;
+    width: max(80%);
     margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
@@ -90,10 +90,10 @@ p{
     color: rgb(41, 168, 168);
 }
 hr{
-    width: 100%;
+    width: clamp(100%, 100%, 1000px);
 }
 .dense{
-    width: 100%;
+    width: clamp(100%, 100%, 1000px);
     height: 8px;
     background-color: rgb(39, 39, 39);
 }
@@ -102,9 +102,19 @@ hr{
     height: 8px;
     background-color: rgb(63, 63, 63);
 }
+h1{
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+h2{
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+h4{
+    font-size: clamp(0.85rem, 1.5vw, 3rem);
+}
 h5{
     margin-top:20px;
     margin-bottom:10px;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 h6{
     justify-self: center;
@@ -134,7 +144,7 @@ a:active{
     text-decoration: underline;
   }
 li{
-    font-size: small;
+    font-size: medium;
 }
 li:not(:last-child) {
     margin-bottom: 5px;

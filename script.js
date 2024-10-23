@@ -23,40 +23,40 @@ function experience(){
 function showWede_1(){
     sleep(100);
     wede_1.style.display = "block";
-}
-function hideWede_1(){
-    sleep(100);
-    wede_1.style.display = "none";
+    wede_2.style.display = "none";
+    wede_3.style.display = "none";
+    wede_4.style.display = "none";
 }
 function showWede_2(){
     sleep(100);
     wede_2.style.display = "block";
-}
-function hideWede_2(){
-    sleep(100);
-    wede_2.style.display = "none";
+    wede_1.style.display = "none";
+    wede_3.style.display = "none";
+    wede_4.style.display = "none";
 }
 function showWede_3(){
     sleep(100);
     wede_3.style.display = "block";
-}
-function hideWede_3(){
-    sleep(100);
-    wede_3.style.display = "none";
+    wede_1.style.display = "none";
+    wede_2.style.display = "none";
+    wede_4.style.display = "none";
 }
 function showWede_4(){
     sleep(100);
     wede_4.style.display = "block";
     hid_list.style.display = "none";
     see_list.style.display = "block";
-}
-function hideWede_4(){
-    sleep(100);
-    wede_4.style.display = "none";
+    wede_1.style.display = "none";
+    wede_2.style.display = "none";
+    wede_3.style.display = "none";
 }
 function show_list(){
     hid_list.style.display = "block";
     see_list.style.display = "none";
+    wede_1.style.display = "none";
+    wede_2.style.display = "none";
+    wede_3.style.display = "none";
+    wede_4.style.display = "none";
 }
 function animateTextColor() {
     hue = (hue + 1) % 720;
