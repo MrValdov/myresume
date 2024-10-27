@@ -146,7 +146,7 @@ a:active{
     text-decoration: underline;
   }
 li{
-    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 li:not(:last-child) {
     margin-bottom: 5px;
